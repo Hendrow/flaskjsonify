@@ -1,4 +1,4 @@
-__pycache__
 env
-migrations
 db.sqlite
+migrations
+__pycache__
