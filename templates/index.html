@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Python Flask Data Search using Jquery Ajax and Sqlite Database</title>
+</head>
+<body>
+    <div class="container search-table">
+        <p><h2 align="center">Python live data</h2></p>
+        <div class="search-box">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Search All Fields</h5>
+                </div>
+                <div class="col-md-9">
+                    <input type="text" id="search_text" name="search-text" class="form-control" placeholder="Search all fields" autofocus>
+                </div>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='skrip2.js') }}"></script>
+</body>
+</html>
